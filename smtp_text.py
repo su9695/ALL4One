@@ -6,7 +6,7 @@ from email.header import Header
 # ----------1.跟发件相关的参数------
 mail_host='smtp.qq.com' # 服务器
 mail_user='411649157'
-mail_password='xumaiyuewrinbjci'
+mail_password='xxxxxxxxxxxxxxxxx'
 
 sender='411649157@qq.com'
 receivers=['411649157@qq.com','2355840532@qq.com']   # 接收邮件的list

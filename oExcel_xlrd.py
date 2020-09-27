@@ -24,7 +24,7 @@ print(c,type(c))# 第3列的值,返回list
 cell_value=data.sheet_by_index(0).cell(0,0).value
 print(cell_value) # 第一行第一列的值
 
-# 读取excel，返回格式为 [{sheet1:[{key:value1},{key:value2}]},{sheet2:[{key1:value1},{key2:value2}]}]
+# 读取excel，返回格式为 {{sheet1:[{key:value1},{key:value2}]},{sheet2:[{key1:value1},{key2:value2}]}}
 class oExcel(object):
     def __init__(self):
         # exc_path 可以是固定路径的excel
@@ -56,6 +56,8 @@ class oExcel(object):
         # 通过sheet名称获取sheetlist（pytest框架读取的是list)
         return self.rdExcel()[sheetname]
 
+x=oExcel().getData('sheet1')
+print(x)
 
 
 
