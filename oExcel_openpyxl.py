@@ -58,17 +58,16 @@ class oExcel(object):
         for sheet in sheets:
             table=self.data.get_sheet_by_name(sheet)
             rows=table.max_row
-            key=[cell.value for cell in list(table.rows)[0]]
-            sheetList=[]
-            for i in range(1,rows):
-                row_value=[cell.value for cell in list(table.rows)[i]]
-                sheetList.append(dict(zip(key,row_value)))
-                i+=1
-            sheetDict[sheet]=sheetList
+            if rows>1:
+                key=[cell.value for cell in list(table.rows)[0]]
+                sheetList=[]
+                for i in range(1,rows):
+                    row_value=[cell.value for cell in list(table.rows)[i]]
+                    sheetList.append(dict(zip(key,row_value)))
+                    i+=1
+                sheetDict[sheet]=sheetList
+            else:
+                sheetDict[sheet]=[]
         return sheetDict
     def getData(self,sheetname):
         return self.rdExcel()[sheetname]
-    
-
-x=oExcel().wtExcel('login','yes')
-print(x)

@@ -2,7 +2,7 @@ import pymssql
 
 host='192.168.0.45'
 username='OCTOPUS3.0'
-password='SLN771(!!@@4'
+password='xxxxxxxxxxxx'
 dbname='OCTOPUS3.0_TEST_D'
 
 conn=pymssql.connect(server=host,user=username,password=password,database=dbname)
