@@ -1,0 +1,5 @@
+2020-09-24 14:57:41,417-ERROR-test.py[line:6]-test--this is error
+2020-09-24 14:57:41,417-CRITICAL-test.py[line:7]-test--this is critical
+2020-09-24 14:57:41,419-ERROR-test.py[line:12]-test222--this is error
+2020-09-24 14:57:41,420-CRITICAL-test.py[line:13]-test222--this is critical
+2020-09-24 14:57:41,420-ERROR-test.py[line:18]-test222--division by zero

@@ -1,0 +1,30 @@
+2020-09-24 11:10:19,124-__main__-INFO--------------start to-------------
+2020-09-24 11:10:19,184-__main__-INFO-this is a info
+2020-09-24 11:10:19,190-__main__-WARNING-warning  warning
+2020-09-24 11:10:19,191-__main__-ERROR-errors to try
+2020-09-24 11:10:19,191-__main__-CRITICAL-critical critical critical
+2020-09-24 11:10:19,192-__main__-CRITICAL-fatalfatalfatalfatalfatalfatalfatalfatalfatal
+2020-09-24 11:10:19,192-__main__-ERROR-Faild to open sklearn.txt from logger.error
+Traceback (most recent call last):
+  File "c:/Users/suqiangqiang/Desktop/pythonL/pythonLearn/other/oLog2.py", line 40, in <module>
+    open("sklearn.txt","rb")
+FileNotFoundError: [Errno 2] No such file or directory: 'sklearn.txt'
+2020-09-24 11:10:19,200-__main__-INFO-Finish
+2020-09-24 11:26:56,368-__main__-INFO--------------start to-------------
+2020-09-24 11:26:56,370-__main__-INFO-this is a info
+2020-09-24 11:26:56,370-__main__-WARNING-warning  warning
+2020-09-24 11:26:56,371-__main__-ERROR-errors to try
+2020-09-24 11:26:56,371-__main__-CRITICAL-critical critical critical
+2020-09-24 11:26:56,371-__main__-CRITICAL-fatalfatalfatalfatalfatalfatalfatalfatalfatal
+2020-09-24 11:26:56,371-__main__-ERROR-Faild to open sklearn.txt from logger.error
+Traceback (most recent call last):
+  File "c:/Users/suqiangqiang/Desktop/pythonL/pythonLearn/other/oLog3.py", line 41, in <module>
+    open("sklearn.txt","rb")
+FileNotFoundError: [Errno 2] No such file or directory: 'sklearn.txt'
+2020-09-24 11:26:56,377-__main__-INFO-Finish
+2020-09-24 11:27:12,978-__main__-INFO--------------start to-------------
+2020-09-24 11:27:12,979-__main__-INFO-this is a info
+2020-09-24 11:27:12,979-__main__-WARNING-warning  warning
+2020-09-24 11:27:12,980-__main__-ERROR-errors to try
+2020-09-24 11:27:12,980-__main__-CRITICAL-critical critical critical
+2020-09-24 11:27:12,981-__main__-CRITICAL-fatalfatalfatalfatalfatalfatalfatalfatalfatal

@@ -1,0 +1,7 @@
+2020-09-24 14:57:41,416 - INFO --test.py- test- hello info
+2020-09-24 14:57:41,417 - ERROR --test.py- test- this is error
+2020-09-24 14:57:41,417 - CRITICAL --test.py- test- this is critical
+2020-09-24 14:57:41,419 - INFO --test.py- test222- hello info
+2020-09-24 14:57:41,419 - ERROR --test.py- test222- this is error
+2020-09-24 14:57:41,420 - CRITICAL --test.py- test222- this is critical
+2020-09-24 14:57:41,420 - ERROR --test.py- test222- division by zero
