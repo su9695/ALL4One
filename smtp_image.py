@@ -7,7 +7,7 @@ from email.mime.image import MIMEImage
 
 mail_host='smtp.qq.com'
 mail_user='411649157'
-mail_passwd='xumaiyuewrinbjci'
+mail_passwd='xxxxxxxxxxxxxxxxx'
 
 sender='411649157@qq.com'
 recivers=['411649157@qq.com','2355840532@qq.com']
