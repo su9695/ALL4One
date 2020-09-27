@@ -7,7 +7,7 @@ class Sql():
         '''
         servername='192.168.0.45'
         username='OCTOPUS3.0'
-        password='SLN771(!!@@4'
+        password='xxxxxxxxxxxxxx'
         dbname='OCTOPUS3.0_TEST_D'
         self.conn=pymssql.connect(server=servername,user=username,password=password,database=dbname)
     def oSelect(self,sql,many=999):
