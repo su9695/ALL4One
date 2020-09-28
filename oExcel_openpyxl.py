@@ -71,3 +71,5 @@ class oExcel(object):
         return sheetDict
     def getData(self,sheetname):
         return self.rdExcel()[sheetname]
+
+

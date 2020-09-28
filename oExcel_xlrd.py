@@ -39,25 +39,25 @@ class oExcel(object):
             sheetList=[]
             # 根据sheet名称确定table
             table=self.data.sheet_by_name(sheet) 
-            # 每个sheet的第一行，即表头行作为dict的key，key是list
-            key=table.row_values(0)
             # 总行数
             nrows=table.nrows
-            # 从第一行开始
-            for i in range(1,nrows):
-                row_value=table.row_values(i) # 获取每一行的值,list形式
-                # dict(zip)将key和每一行zip，得到一个dict,依次添加进sheetlist中
-                sheetList.append(dict(zip(key,row_value)))
-                i+=1 
-            #  {sheetname:[每个sheet内容(包含key和每一行值组成的字典)]}
-            sheetDict[sheet]=sheetList
+            # 每个sheet的第一行，即表头行作为dict的key，key是list
+            if nrows>1:
+                key=table.row_values(0)
+                # 从第一行开始
+                for i in range(1,nrows):
+                    row_value=table.row_values(i) # 获取每一行的值,list形式
+                    # dict(zip)将key和每一行zip，得到一个dict,依次添加进sheetlist中
+                    sheetList.append(dict(zip(key,row_value)))
+                    i+=1 
+                #  {sheetname:[每个sheet内容(包含key和每一行值组成的字典)]}
+                sheetDict[sheet]=sheetList
+            else:
+                sheetDict[sheet]=[]
         return sheetDict
     def getData(self,sheetname):
         # 通过sheet名称获取sheetlist（pytest框架读取的是list)
         return self.rdExcel()[sheetname]
-
-x=oExcel().getData('sheet1')
-print(x)
 
 
 
